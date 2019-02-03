@@ -1,28 +1,31 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header/>
+    
+    <div class="container is-fluid">
+      <h1 class="title">
+        Hello World
+      </h1>
+      <p class="subtitle">
+        My first website with <strong>Vue and Bulma</strong>!
+      </p>
+    </div>
+
+    <Footer/>
   </div>
 </template>
-
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+
+ import Header from './components/Header.vue'
+ import Footer from './components/Footer.vue'
 
 export default {
   name: 'app',
-  components: {
-    HelloWorld
-  }
+   components: {
+     Header,
+     Footer
+   }
 }
 </script>
-
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
