@@ -1,4 +1,4 @@
-# vue-bulma
+# bulma-vue-node
 
 This is an quick implementation of vue and bulma with modular header and footers.
 
