@@ -1,31 +1,34 @@
 <template>
   <div id="app">
-    <Header/>
-    
-    <div class="container is-fluid">
-      <h1 class="title">
-        Hello World
-      </h1>
-      <p class="subtitle">
-        My first website with <strong>Vue and Bulma</strong>!
-      </p>
+    <div class="hero is-dark ">
+      <header class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <router-link to='/' class="navbar-item">
+              <img src="https://placehold.it/128x48" alt="MyLogo">
+            </router-link>
+            <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroC" class="navbar-menu">
+            <div class="navbar-end">
+              <router-link to='/' class="navbar-item">Home</router-link>
+              <span class="navbar-item">
+                <router-link to='/login' class="button is-info">Login</router-link>
+              </span>
+            </div>
+          </div>
+        </div>
+      </header>
     </div>
-
-    <Footer/>
+    <router-view/>
   </div>
 </template>
-<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
 <script>
-
-
- import Header from './components/Header.vue'
- import Footer from './components/Footer.vue'
-
 export default {
-  name: 'app',
-   components: {
-     Header,
-     Footer
-   }
 }
 </script>
